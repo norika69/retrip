@@ -1,0 +1,284 @@
+# Logfile created on 2016-12-17 13:29:52 +0900 by logger.rb/54362
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-12-17 13:29:52 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [53379402] Running [ -d $HOME/.rbenv/versions/2.3.1 ] as norika@52.199.166.159
+ DEBUG [53379402] Command: [ -d $HOME/.rbenv/versions/2.3.1 ]
+ DEBUG [53379402] Finished in 1.220 seconds with exit status 0 (successful).
+  INFO [58cb5dfc] Running /usr/bin/env mkdir -p /tmp as norika@52.199.166.159
+ DEBUG [58cb5dfc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [58cb5dfc] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-retrip-production-norikaishida.sh 0.0%
+  INFO Uploading /tmp/git-ssh-retrip-production-norikaishida.sh 100.0%
+  INFO [18e91fee] Running /usr/bin/env chmod 700 /tmp/git-ssh-retrip-production-norikaishida.sh as norika@52.199.166.159
+ DEBUG [18e91fee] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-retrip-production-norikaishida.sh )
+  INFO [18e91fee] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [efc6b4b0] Running /usr/bin/env git ls-remote --heads git@github.com:norika69/retrip.git as norika@52.199.166.159
+ DEBUG [efc6b4b0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-retrip-production-norikaishida.sh" ; /usr/bin/env git ls-remote --heads git@github.com:norika69/retrip.git )
+ DEBUG [efc6b4b0] 	08aaa0e111ee0a30a0b04eb30aca3589b0317a7e	refs/heads/development
+8e55a9ddcf685c1644b222165ee9168400d1b777	refs/heads/master
+86433fb54ff399c0fa3c1138061e391c62521111	refs/heads/revert-2-development
+bc2a2d1700e02d0adce02c548009b2b7e221cffa	refs/heads/revert-3-development
+  INFO [efc6b4b0] Finished in 2.446 seconds with exit status 0 (successful).
+  INFO [ec6c865f] Running /usr/bin/env mkdir -p /home/norika/shared /home/norika/releases as norika@52.199.166.159
+ DEBUG [ec6c865f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/norika/shared /home/norika/releases )
+  INFO [ec6c865f] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [0b21fa86] Running /usr/bin/env mkdir -p /home/norika/shared/log /home/norika/shared/tmp/pids /home/norika/shared/tmp/cache /home/norika/shared/tmp/sockets /home/norika/shared/vendor/bundle /home/norika/shared/public/system /home/norika/shared/public/assets as norika@52.199.166.159
+ DEBUG [0b21fa86] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/norika/shared/log /home/norika/shared/tmp/pids /home/norika/shared/tmp/cache /home/norika/shared/tmp/sockets /home/norika/shared/vendor/bundle /home/norika/shared/public/system /home/norika/shared/public/assets )
+  INFO [0b21fa86] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [04cc7444] Running /usr/bin/env mkdir -p /home/norika/shared/config as norika@52.199.166.159
+ DEBUG [04cc7444] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/norika/shared/config )
+  INFO [04cc7444] Finished in 0.030 seconds with exit status 0 (successful).
+ DEBUG [3aeba51b] Running [ -f /home/norika/shared/config/secrets.yml ] as norika@52.199.166.159
+ DEBUG [3aeba51b] Command: [ -f /home/norika/shared/config/secrets.yml ]
+ DEBUG [3aeba51b] Finished in 0.029 seconds with exit status 0 (successful).
+ DEBUG [b77de4da] Running [ -f /home/norika/current/REVISION ] as norika@52.199.166.159
+ DEBUG [b77de4da] Command: [ -f /home/norika/current/REVISION ]
+ DEBUG [b77de4da] Finished in 0.026 seconds with exit status 1 (failed).
+ DEBUG [292b52b7] Running [ -f /home/norika/repo/HEAD ] as norika@52.199.166.159
+ DEBUG [292b52b7] Command: [ -f /home/norika/repo/HEAD ]
+ DEBUG [292b52b7] Finished in 0.026 seconds with exit status 1 (failed).
+ DEBUG [2ea2d88f] Running if test ! -d /home/norika; then echo "Directory does not exist '/home/norika'" 1>&2; false; fi as norika@52.199.166.159
+ DEBUG [2ea2d88f] Command: if test ! -d /home/norika; then echo "Directory does not exist '/home/norika'" 1>&2; false; fi
+ DEBUG [2ea2d88f] Finished in 0.026 seconds with exit status 0 (successful).
+  INFO [5eb55eef] Running /usr/bin/env git clone --mirror git@github.com:norika69/retrip.git /home/norika/repo as norika@52.199.166.159
+ DEBUG [5eb55eef] Command: cd /home/norika && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-retrip-production-norikaishida.sh" ; /usr/bin/env git clone --mirror git@github.com:norika69/retrip.git /home/norika/repo )
+ DEBUG [5eb55eef] 	Cloning into bare repository '/home/norika/repo'...
+  INFO [5eb55eef] Finished in 2.745 seconds with exit status 0 (successful).
+ DEBUG [e2e91f9c] Running if test ! -d /home/norika/repo; then echo "Directory does not exist '/home/norika/repo'" 1>&2; false; fi as norika@52.199.166.159
+ DEBUG [e2e91f9c] Command: if test ! -d /home/norika/repo; then echo "Directory does not exist '/home/norika/repo'" 1>&2; false; fi
+ DEBUG [e2e91f9c] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [03405235] Running /usr/bin/env git remote update --prune as norika@52.199.166.159
+ DEBUG [03405235] Command: cd /home/norika/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-retrip-production-norikaishida.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [03405235] 	Fetching origin
+  INFO [03405235] Finished in 2.514 seconds with exit status 0 (successful).
+ DEBUG [c005c271] Running if test ! -d /home/norika/repo; then echo "Directory does not exist '/home/norika/repo'" 1>&2; false; fi as norika@52.199.166.159
+ DEBUG [c005c271] Command: if test ! -d /home/norika/repo; then echo "Directory does not exist '/home/norika/repo'" 1>&2; false; fi
+ DEBUG [c005c271] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [e16f06ec] Running /usr/bin/env mkdir -p /home/norika/releases/20161217042956 as norika@52.199.166.159
+ DEBUG [e16f06ec] Command: cd /home/norika/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-retrip-production-norikaishida.sh" ; /usr/bin/env mkdir -p /home/norika/releases/20161217042956 )
+  INFO [e16f06ec] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [bfc3fa7c] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/norika/releases/20161217042956 as norika@52.199.166.159
+ DEBUG [bfc3fa7c] Command: cd /home/norika/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-retrip-production-norikaishida.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/norika/releases/20161217042956 )
+  INFO [bfc3fa7c] Finished in 0.040 seconds with exit status 0 (successful).
+ DEBUG [754d4bf8] Running if test ! -d /home/norika/repo; then echo "Directory does not exist '/home/norika/repo'" 1>&2; false; fi as norika@52.199.166.159
+ DEBUG [754d4bf8] Command: if test ! -d /home/norika/repo; then echo "Directory does not exist '/home/norika/repo'" 1>&2; false; fi
+ DEBUG [754d4bf8] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [da5f2f11] Running /usr/bin/env git rev-list --max-count=1 master as norika@52.199.166.159
+ DEBUG [da5f2f11] Command: cd /home/norika/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-retrip-production-norikaishida.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [da5f2f11] 	8e55a9ddcf685c1644b222165ee9168400d1b777
+ DEBUG [da5f2f11] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [f926a6c8] Running if test ! -d /home/norika/releases/20161217042956; then echo "Directory does not exist '/home/norika/releases/20161217042956'" 1>&2; false; fi as norika@52.199.166.159
+ DEBUG [f926a6c8] Command: if test ! -d /home/norika/releases/20161217042956; then echo "Directory does not exist '/home/norika/releases/20161217042956'" 1>&2; false; fi
+ DEBUG [f926a6c8] Finished in 0.036 seconds with exit status 0 (successful).
+  INFO [47fa0103] Running /usr/bin/env echo "8e55a9ddcf685c1644b222165ee9168400d1b777" >> REVISION as norika@52.199.166.159
+ DEBUG [47fa0103] Command: cd /home/norika/releases/20161217042956 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env echo "8e55a9ddcf685c1644b222165ee9168400d1b777" >> REVISION )
+  INFO [47fa0103] Finished in 0.038 seconds with exit status 0 (successful).
+  INFO [a624b5d0] Running /usr/bin/env mkdir -p /home/norika/releases/20161217042956/config as norika@52.199.166.159
+ DEBUG [a624b5d0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/norika/releases/20161217042956/config )
+  INFO [a624b5d0] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [c33f4ec6] Running [ -L /home/norika/releases/20161217042956/config/secrets.yml ] as norika@52.199.166.159
+ DEBUG [c33f4ec6] Command: [ -L /home/norika/releases/20161217042956/config/secrets.yml ]
+ DEBUG [c33f4ec6] Finished in 0.039 seconds with exit status 1 (failed).
+ DEBUG [03bffb6a] Running [ -f /home/norika/releases/20161217042956/config/secrets.yml ] as norika@52.199.166.159
+ DEBUG [03bffb6a] Command: [ -f /home/norika/releases/20161217042956/config/secrets.yml ]
+ DEBUG [03bffb6a] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [5ed7e9fd] Running /usr/bin/env rm /home/norika/releases/20161217042956/config/secrets.yml as norika@52.199.166.159
+ DEBUG [5ed7e9fd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env rm /home/norika/releases/20161217042956/config/secrets.yml )
+  INFO [5ed7e9fd] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [4e3ba554] Running /usr/bin/env ln -s /home/norika/shared/config/secrets.yml /home/norika/releases/20161217042956/config/secrets.yml as norika@52.199.166.159
+ DEBUG [4e3ba554] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/norika/shared/config/secrets.yml /home/norika/releases/20161217042956/config/secrets.yml )
+  INFO [4e3ba554] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [a474a2fa] Running /usr/bin/env mkdir -p /home/norika/releases/20161217042956 /home/norika/releases/20161217042956/tmp /home/norika/releases/20161217042956/vendor /home/norika/releases/20161217042956/public as norika@52.199.166.159
+ DEBUG [a474a2fa] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/norika/releases/20161217042956 /home/norika/releases/20161217042956/tmp /home/norika/releases/20161217042956/vendor /home/norika/releases/20161217042956/public )
+  INFO [a474a2fa] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [f1611092] Running [ -L /home/norika/releases/20161217042956/log ] as norika@52.199.166.159
+ DEBUG [f1611092] Command: [ -L /home/norika/releases/20161217042956/log ]
+ DEBUG [f1611092] Finished in 0.027 seconds with exit status 1 (failed).
+ DEBUG [02fc9073] Running [ -d /home/norika/releases/20161217042956/log ] as norika@52.199.166.159
+ DEBUG [02fc9073] Command: [ -d /home/norika/releases/20161217042956/log ]
+ DEBUG [02fc9073] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [51582301] Running /usr/bin/env rm -rf /home/norika/releases/20161217042956/log as norika@52.199.166.159
+ DEBUG [51582301] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env rm -rf /home/norika/releases/20161217042956/log )
+  INFO [51582301] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [d96b61f7] Running /usr/bin/env ln -s /home/norika/shared/log /home/norika/releases/20161217042956/log as norika@52.199.166.159
+ DEBUG [d96b61f7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/norika/shared/log /home/norika/releases/20161217042956/log )
+  INFO [d96b61f7] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [b9cc0c55] Running [ -L /home/norika/releases/20161217042956/tmp/pids ] as norika@52.199.166.159
+ DEBUG [b9cc0c55] Command: [ -L /home/norika/releases/20161217042956/tmp/pids ]
+ DEBUG [b9cc0c55] Finished in 0.049 seconds with exit status 1 (failed).
+ DEBUG [cb99567d] Running [ -d /home/norika/releases/20161217042956/tmp/pids ] as norika@52.199.166.159
+ DEBUG [cb99567d] Command: [ -d /home/norika/releases/20161217042956/tmp/pids ]
+ DEBUG [cb99567d] Finished in 0.051 seconds with exit status 1 (failed).
+  INFO [a853bf82] Running /usr/bin/env ln -s /home/norika/shared/tmp/pids /home/norika/releases/20161217042956/tmp/pids as norika@52.199.166.159
+ DEBUG [a853bf82] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/norika/shared/tmp/pids /home/norika/releases/20161217042956/tmp/pids )
+  INFO [a853bf82] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [fd5f7e93] Running [ -L /home/norika/releases/20161217042956/tmp/cache ] as norika@52.199.166.159
+ DEBUG [fd5f7e93] Command: [ -L /home/norika/releases/20161217042956/tmp/cache ]
+ DEBUG [fd5f7e93] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [1294ebb2] Running [ -d /home/norika/releases/20161217042956/tmp/cache ] as norika@52.199.166.159
+ DEBUG [1294ebb2] Command: [ -d /home/norika/releases/20161217042956/tmp/cache ]
+ DEBUG [1294ebb2] Finished in 0.025 seconds with exit status 1 (failed).
+  INFO [2ab08ffd] Running /usr/bin/env ln -s /home/norika/shared/tmp/cache /home/norika/releases/20161217042956/tmp/cache as norika@52.199.166.159
+ DEBUG [2ab08ffd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/norika/shared/tmp/cache /home/norika/releases/20161217042956/tmp/cache )
+  INFO [2ab08ffd] Finished in 0.028 seconds with exit status 0 (successful).
+ DEBUG [f448f740] Running [ -L /home/norika/releases/20161217042956/tmp/sockets ] as norika@52.199.166.159
+ DEBUG [f448f740] Command: [ -L /home/norika/releases/20161217042956/tmp/sockets ]
+ DEBUG [f448f740] Finished in 0.035 seconds with exit status 1 (failed).
+ DEBUG [8f06d9d8] Running [ -d /home/norika/releases/20161217042956/tmp/sockets ] as norika@52.199.166.159
+ DEBUG [8f06d9d8] Command: [ -d /home/norika/releases/20161217042956/tmp/sockets ]
+ DEBUG [8f06d9d8] Finished in 0.044 seconds with exit status 1 (failed).
+  INFO [a8316219] Running /usr/bin/env ln -s /home/norika/shared/tmp/sockets /home/norika/releases/20161217042956/tmp/sockets as norika@52.199.166.159
+ DEBUG [a8316219] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/norika/shared/tmp/sockets /home/norika/releases/20161217042956/tmp/sockets )
+  INFO [a8316219] Finished in 0.040 seconds with exit status 0 (successful).
+ DEBUG [b42d0cea] Running [ -L /home/norika/releases/20161217042956/vendor/bundle ] as norika@52.199.166.159
+ DEBUG [b42d0cea] Command: [ -L /home/norika/releases/20161217042956/vendor/bundle ]
+ DEBUG [b42d0cea] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [bbbcc0a3] Running [ -d /home/norika/releases/20161217042956/vendor/bundle ] as norika@52.199.166.159
+ DEBUG [bbbcc0a3] Command: [ -d /home/norika/releases/20161217042956/vendor/bundle ]
+ DEBUG [bbbcc0a3] Finished in 0.040 seconds with exit status 1 (failed).
+  INFO [1db489d6] Running /usr/bin/env ln -s /home/norika/shared/vendor/bundle /home/norika/releases/20161217042956/vendor/bundle as norika@52.199.166.159
+ DEBUG [1db489d6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/norika/shared/vendor/bundle /home/norika/releases/20161217042956/vendor/bundle )
+  INFO [1db489d6] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [d148027b] Running [ -L /home/norika/releases/20161217042956/public/system ] as norika@52.199.166.159
+ DEBUG [d148027b] Command: [ -L /home/norika/releases/20161217042956/public/system ]
+ DEBUG [d148027b] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [18cc9f24] Running [ -d /home/norika/releases/20161217042956/public/system ] as norika@52.199.166.159
+ DEBUG [18cc9f24] Command: [ -d /home/norika/releases/20161217042956/public/system ]
+ DEBUG [18cc9f24] Finished in 0.043 seconds with exit status 1 (failed).
+  INFO [be8fe91f] Running /usr/bin/env ln -s /home/norika/shared/public/system /home/norika/releases/20161217042956/public/system as norika@52.199.166.159
+ DEBUG [be8fe91f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/norika/shared/public/system /home/norika/releases/20161217042956/public/system )
+  INFO [be8fe91f] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [d7fd3ae6] Running [ -L /home/norika/releases/20161217042956/public/assets ] as norika@52.199.166.159
+ DEBUG [d7fd3ae6] Command: [ -L /home/norika/releases/20161217042956/public/assets ]
+ DEBUG [d7fd3ae6] Finished in 0.031 seconds with exit status 1 (failed).
+ DEBUG [5f6cd035] Running [ -d /home/norika/releases/20161217042956/public/assets ] as norika@52.199.166.159
+ DEBUG [5f6cd035] Command: [ -d /home/norika/releases/20161217042956/public/assets ]
+ DEBUG [5f6cd035] Finished in 0.027 seconds with exit status 1 (failed).
+  INFO [129b3f6d] Running /usr/bin/env ln -s /home/norika/shared/public/assets /home/norika/releases/20161217042956/public/assets as norika@52.199.166.159
+ DEBUG [129b3f6d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/norika/shared/public/assets /home/norika/releases/20161217042956/public/assets )
+  INFO [129b3f6d] Finished in 0.029 seconds with exit status 0 (successful).
+ DEBUG [7767c367] Running if test ! -d /home/norika/releases/20161217042956; then echo "Directory does not exist '/home/norika/releases/20161217042956'" 1>&2; false; fi as norika@52.199.166.159
+ DEBUG [7767c367] Command: if test ! -d /home/norika/releases/20161217042956; then echo "Directory does not exist '/home/norika/releases/20161217042956'" 1>&2; false; fi
+ DEBUG [7767c367] Finished in 0.027 seconds with exit status 0 (successful).
+ DEBUG [4ab8843c] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/norika/shared/bundle as norika@52.199.166.159
+ DEBUG [4ab8843c] Command: cd /home/norika/releases/20161217042956 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/norika/shared/bundle )
+ DEBUG [4ab8843c] 	Your Gemfile lists the gem rails (>= 5.0.0.1, ~> 5.0.0) more than once.
+You should probably keep only one of them.
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [4ab8843c] 	The following gems are missing
+ DEBUG [4ab8843c] 	 * rake (12.0.0)
+ DEBUG [4ab8843c] 	 * concurrent-ruby (1.0.2)
+ DEBUG [4ab8843c] 	 * i18n (0.7.0)
+ DEBUG [4ab8843c] 	 * minitest (5.10.1)
+ DEBUG [4ab8843c] 	 * thread_safe (0.3.5)
+ DEBUG [4ab8843c] 	 * tzinfo (1.2.2)
+ DEBUG [4ab8843c] 	 * activesupport (5.0.0.1)
+ DEBUG [4ab8843c] 	 * builder (3.2.2)
+ DEBUG [4ab8843c] 	 * erubis (2.7.0)
+ DEBUG [4ab8843c] 	 * mini_portile2 (2.1.0)
+ DEBUG [4ab8843c] 	 * nokogiri (1.6.8.1)
+ DEBUG [4ab8843c] 	 * rails-dom-testing (2.0.1)
+ DEBUG [4ab8843c] 	 * loofah (2.0.3)
+ DEBUG [4ab8843c] 	 * rails-html-sanitizer (1.0.3)
+ DEBUG [4ab8843c] 	 * actionview (5.0.0.1)
+ DEBUG [4ab8843c] 	 * rack (2.0.1)
+ DEBUG [4ab8843c] 	 * rack-test (0.6.3)
+ DEBUG [4ab8843c] 	 * actionpack (5.0.0.1)
+ DEBUG [4ab8843c] 	 * nio4r (1.2.1)
+ DEBUG [4ab8843c] 	 * websocket-extensions (0.1.2)
+ DEBUG [4ab8843c] 	 * websocket-driver (0.6.4)
+ DEBUG [4ab8843c] 	 * actioncable (5.0.0.1)
+ DEBUG [4ab8843c] 	 * globalid (0.3.7)
+ DEBUG [4ab8843c] 	 * activejob (5.0.0.1)
+ DEBUG [4ab8843c] 	 * mime-types-data (3.2016.0521)
+ DEBUG [4ab8843c] 	 * mime-types (3.1)
+ DEBUG [4ab8843c] 	 * mail (2.6.4)
+ DEBUG [4ab8843c] 	 * actionmailer (5.0.0.1)
+ DEBUG [4ab8843c] 	 * activemodel (5.0.0.1)
+ DEBUG [4ab8843c] 	 * arel (7.1.4)
+ DEBUG [4ab8843c] 	 * activerecord (5.0.0.1)
+ DEBUG [4ab8843c] 	 * net-ssh (3.2.0)
+ DEBUG [4ab8843c] 	 * net-scp (1.2.1)
+ DEBUG [4ab8843c] 	 * sshkit (1.11.4)
+ DEBUG [4ab8843c] 	 * airbrussh (1.1.1)
+ DEBUG [4ab8843c] 	 * byebug (9.0.6)
+ DEBUG [4ab8843c] 	 * capistrano-harrow (0.5.3)
+ DEBUG [4ab8843c] 	 * capistrano (3.7.0)
+ DEBUG [4ab8843c] 	 * capistrano-bundler (1.2.0)
+ DEBUG [4ab8843c] 	 * capistrano-rails (1.2.0)
+ DEBUG [4ab8843c] 	 * capistrano-rbenv (2.1.0)
+ DEBUG [4ab8843c] 	 * coffee-script-source (1.11.1)
+ DEBUG [4ab8843c] 	 * execjs (2.7.0)
+ DEBUG [4ab8843c] 	 * coffee-script (2.4.1)
+ DEBUG [4ab8843c] 	 * method_source (0.8.2)
+ DEBUG [4ab8843c] 	 * thor (0.19.4)
+ DEBUG [4ab8843c] 	 * railties (5.0.0.1)
+ DEBUG [4ab8843c] 	 * coffee-rails (4.2.1)
+ DEBUG [4ab8843c] 	 * debug_inspector (0.0.2)
+ DEBUG [4ab8843c] 	 * tilt (2.0.5)
+ DEBUG [4ab8843c] 	 * haml (4.0.7)
+ DEBUG [4ab8843c] 	 * sexp_processor (4.7.0)
+ DEBUG [4ab8843c] 	 * ruby_parser (3.8.3)
+ DEBUG [4ab8843c] 	 * html2haml (2.0.0)
+ DEBUG [4ab8843c] 	 * erb2haml (0.1.5)
+ DEBUG [4ab8843c] 	 * ffi (1.9.14)
+ DEBUG [4ab8843c] 	 * haml-rails (0.9.0)
+ DEBUG [4ab8843c] 	 * multi_json (1.12.1)
+ DEBUG [4ab8843c] 	 * jbuilder (2.6.1)
+ DEBUG [4ab8843c] 	 * jquery-rails (4.2.1)
+ DEBUG [4ab8843c] 	 * kgio (2.10.0)
+ DEBUG [4ab8843c] 	 * rb-fsevent (0.9.8)
+ DEBUG [4ab8843c] 	 * rb-inotify (0.9.7)
+ DEBUG [4ab8843c] 	 * listen (3.0.8)
+ DEBUG [4ab8843c] 	 * mysql2 (0.4.5)
+ DEBUG [4ab8843c] 	 * puma (3.6.2)
+ DEBUG [4ab8843c] 	 * sprockets (3.7.0)
+ DEBUG [4ab8843c] 	 * sprockets-rails (3.2.0)
+ DEBUG [4ab8843c] 	 * rails (5.0.0.1)
+ DEBUG [4ab8843c] 	 * raindrops (0.17.0)
+ DEBUG [4ab8843c] 	 * sass (3.4.22)
+ DEBUG [4ab8843c] 	 * sass-rails (5.0.6)
+ DEBUG [4ab8843c] 	 * spring (2.0.0)
+ DEBUG [4ab8843c] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [4ab8843c] 	 * turbolinks-source (5.0.0)
+ DEBUG [4ab8843c] 	 * turbolinks (5.0.1)
+ DEBUG [4ab8843c] 	 * uglifier (3.0.4)
+ DEBUG [4ab8843c] 	 * unicorn (5.2.0)
+ DEBUG [4ab8843c] 	 * web-console (3.4.0)
+ DEBUG [4ab8843c] 	Install missing gems with `bundle install`
+ DEBUG [4ab8843c] Finished in 0.301 seconds with exit status 1 (failed).
+  INFO [029598e5] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /home/norika/shared/bundle --without development test --deployment --quiet as norika@52.199.166.159
+ DEBUG [029598e5] Command: cd /home/norika/releases/20161217042956 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /home/norika/shared/bundle --without development test --deployment --quiet )
+  INFO [029598e5] Finished in 78.828 seconds with exit status 0 (successful).
+ DEBUG [d3b84f8f] Running if test ! -d /home/norika/releases/20161217042956; then echo "Directory does not exist '/home/norika/releases/20161217042956'" 1>&2; false; fi as norika@52.199.166.159
+ DEBUG [d3b84f8f] Command: if test ! -d /home/norika/releases/20161217042956; then echo "Directory does not exist '/home/norika/releases/20161217042956'" 1>&2; false; fi
+ DEBUG [d3b84f8f] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [6ee33b07] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as norika@52.199.166.159
+ DEBUG [6ee33b07] Command: cd /home/norika/releases/20161217042956 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.3.1" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [6ee33b07] 	rake aborted!
+ DEBUG [6ee33b07] 	NoMethodError: undefined method `symbolize_keys' for #<String:0x0055828a62dd08>
+ DEBUG [6ee33b07] 	/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/application.rb:393:in `secrets'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/application.rb:171:in `key_generator'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/application.rb:202:in `message_verifier'
+/home/norika/shared/bundle/ruby/2.3.0/gems/globalid-0.3.7/lib/global_id/railtie.rb:25:in `block (2 levels) in <class:Railtie>'
+/home/norika/shared/bundle/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/lazy_load_hooks.rb:36:in `execute_hook'
+/home/norika/shared/bundle/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+/home/norika/shared/bundle/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+/home/norika/shared/bundle/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/application/finisher.rb:65:in `block in <module:Finisher>'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/initializable.rb:30:in `instance_exec'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/initializable.rb:30:in `run'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/initializable.rb:54:in `run_initializers'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/application.rb:352:in `initialize!'
+/home/norika/releases/20161217042956/config/environment.rb:5:in `<top (required)>'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/application.rb:328:in `require'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/application.rb:328:in `require_environment!'
+/home/norika/shared/bundle/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/application.rb:448:in `block in run_tasks_blocks'
+/home/norika/shared/bundle/ruby/2.3.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/task.rb:62:in `block (2 levels) in define'
+/home/norika/shared/bundle/ruby/2.3.0/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/norika/.rbenv/versions/2.3.1/bin/bundle:23:in `load'
+/home/norika/.rbenv/versions/2.3.1/bin/bundle:23:in `<main>'
+ DEBUG [6ee33b07] 	Tasks: TOP => environment
+ DEBUG [6ee33b07] 	(See full trace by running task with --trace)
