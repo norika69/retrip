@@ -1,7 +1,6 @@
 # capistranoのバージョン固定
 lock '3.7.0'
 
-
 # デプロイするアプリケーション名に変更してください
 set :application, 'retrip'
 
@@ -10,6 +9,8 @@ set :repo_url, 'git@github.com:norika69/retrip.git'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, 'master'
+
+set :scm, :git
 
 # deploy先のディレクトリに変更してください
 set :deploy_to, '/home/norika'
