@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: retrip_production
-  username: retrip
-  password: <%= ENV['RETRIP_DATABASE_PASSWORD'] %>
+  username: root
+  password:
+  socket: /var/lib/mysql/mysql.sock
