@@ -10,6 +10,8 @@ set :repo_url, 'git@github.com:norika69/retrip.git'
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, 'master'
 
+set :scm, :git
+
 # deploy先のディレクトリに変更してください
 set :deploy_to, '/home/norika'
 
