@@ -1,0 +1,26 @@
+.header
+  #headerInner.ng-score
+    %h1.logo
+      = link_to image_tag('https://static.retrip.jp/static/img/common/logo.ee8b53951642.svg', { width:"120px", height:"30px", alt: "RETRIP[リトリップ] - 旅行キュレーションメディア", id: "logo"}), root_path
+    .headerSearch
+      %form
+        %input.headerSearchInput{autocomplete: "off", name: "q", placeholder: "気になるワードを入力", type: "text" }/
+        %input.dummy
+        %input.headerSearchBtn{ "ng-click" => "submit()", type: "button",value: "" }/
+      %ul.headerSearchDialog.ng-hide
+    .headerMenu
+      %span.userName
+        = link_to "", "", title: "お気に入りしたまとめ"
+        %span.userIcon{ style: "" }
+      %span.newArt
+        = link_to "まとめをつくる", ""
+      %span.newSet
+        %ul.menulist
+          %li
+            = link_to "お知らせ", "", class: "slide_box"
+          %li
+            = link_to "プロフィール編集", "", class: "slide_box"
+          %li
+            = link_to "アカウント設定", "", class: "slide_box"
+          %li
+            = link_to "ログアウト", "",class: "slide_box"
