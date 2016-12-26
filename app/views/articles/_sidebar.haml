@@ -1,0 +1,132 @@
+.articleSide.sideBar
+  .maincontent
+    .area
+      %h2 エリア一覧
+      %ul
+        %li.areas
+          = link_to image_tag 'https://static.retrip.jp/location/38/images/38393a2b1d-bfd1-4f8c-8967-845eba5dec6e_thumb.jpg', class: "areaimage"
+          %p.areaname
+            = link_to "日本","",class: "areaName"
+        %li.areas
+          = link_to image_tag 'https://static.retrip.jp/location/210/images/210c73e81ef-79ab-4fe4-8479-4490eac81602_thumb.jpg', class: "areaimage"
+          %p.areaname
+            = link_to "北米","",class: "areaName"
+        %li.areas
+          = link_to image_tag 'https://static.retrip.jp/location/211/images/211a3ab5550-59c0-4f5d-b328-69591023a42d_thumb.jpg', class: "areaimage"
+          %p.areaname
+            = link_to "中南米","",class: "areaName"
+        %li.areas
+          = link_to image_tag 'https://static.retrip.jp/location/214/images/2149e2ec13e-bd36-4687-a88f-80b45f5aadc3_thumb.jpg', class: "areaimage"
+          %p.areaname
+            = link_to "アフリカ","",class: "areaName"
+        %li.areas
+          = link_to image_tag 'https://static.retrip.jp/location/213/images/213b3881884-4baf-4e7a-bb9a-054e703d7410_thumb.jpg', class: "areaimage"
+          %p.areaname
+            = link_to "中東","",class: "areaName"
+        %li.areas
+          = link_to image_tag 'https://static.retrip.jp/location/208/images/208379aead4-4302-42cf-a0c1-7b09c25b9c54_thumb.jpg', class: "areaimage"
+          %p.areaname
+            = link_to "アジア","",class: "areaName"
+        %li.areas
+          = link_to image_tag 'https://static.retrip.jp/location/212/images/2124d9a9b16-af0e-4c5f-958d-656d35cf1f6b_thumb.jpg', class: "areaimage"
+          %p.areaname
+            = link_to "ヨーロッパ","",class: "areaName"
+        %li.areas
+          = link_to image_tag 'https://static.retrip.jp/location/209/images/2094cc6c729-fcdc-4c97-a9f5-1a42c9bc768a_thumb.jpg', class: "areaimage"
+          %p.areaname
+            = link_to "オセアニア","",class: "areaName"
+
+      .sideBarLink
+        = link_to "エリア一覧 >", "", class: "areaindex"
+
+    .tags
+      %h2 人気おすすめタグ
+      %ul
+        %li
+          %span.fa.fa-hashtag
+          = link_to "イベント","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "スイーツ","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "グルメ","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "国内","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "絶景","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "デートスポット","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "カフェ","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "ホテル","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "お土産","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "東京のホテル","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "沖縄のホテル","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "東京のグルメ","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "大阪のグルメ","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "居酒屋","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "旅館","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "東京の観光スポット","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "温泉","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "紅葉","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "世界の絶景","",class: "tags"
+        %li
+          %span.fa-hashtag
+          = link_to "ディズニー","",class: "tags"
+
+      .sideBarLink
+        = link_to "全てのタグ >", "", class: "areaindex"
+
+    .articlePopular
+      %h2 人気ランキング
+      .articleSideList
+        .exp
+          = link_to(image_tag('https://static.retrip.jp/article/72639/images/72639f9b6b978-1bc6-4383-81cd-3aa5e5f7bc65_thumb.jpg',alt: 'first', class: "img",size: "70x70"), 'https://retrip.jp/articles/72639/')
+          = link_to "冬はぬくぬくと。この冬行きたい東京都内のおすすめカフェ7店","https://retrip.jp/articles/72639/", class: "rankText"
+          %p.rankImg.rankImg1
+            %span 1
+        .exp
+          = link_to(image_tag('https://static.retrip.jp/article/72639/images/72639f9b6b978-1bc6-4383-81cd-3aa5e5f7bc65_thumb.jpg',alt: 'first', class: "img",size: "70x70"), 'https://retrip.jp/articles/72639/')
+          = link_to "冬はぬくぬくと。この冬行きたい東京都内のカフェ7店","https://retrip.jp/articles/72639/", class: "rankText"
+          %p.rankImg.rankImg2
+            %span 2
+        .exp
+          = link_to(image_tag('https://static.retrip.jp/article/72639/images/72639f9b6b978-1bc6-4383-81cd-3aa5e5f7bc65_thumb.jpg',alt: 'first', class: "img",size: "70x70"), 'https://retrip.jp/articles/72639/')
+          = link_to "冬はぬくぬくと。この冬行きたい東京都内のカフェ7店","https://retrip.jp/articles/72639/", class: "rankText"
+          %p.rankImg.rankImg3
+            %span 3
+        .exp
+          = link_to(image_tag('https://static.retrip.jp/article/72639/images/72639f9b6b978-1bc6-4383-81cd-3aa5e5f7bc65_thumb.jpg',alt: 'first', class: "img",size: "70x70"), 'https://retrip.jp/articles/72639/')
+          = link_to "冬はぬくぬくと。この冬行きたい東京都内のカフェ7店","https://retrip.jp/articles/72639/", class: "rankText"
+        .exp
+          = link_to(image_tag('https://static.retrip.jp/article/72639/images/72639f9b6b978-1bc6-4383-81cd-3aa5e5f7bc65_thumb.jpg',alt: 'first', class: "img",size: "70x70"), 'https://retrip.jp/articles/72639/')
+          = link_to "冬はぬくぬくと。この冬行きたい東京都内のカフェ7店","https://retrip.jp/articles/72639/", class: "rankText"
