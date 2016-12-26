@@ -1,0 +1,63 @@
+#page
+  = render partial: "header"
+  #indexMain
+    .content
+      .contentSliderImg
+        = link_to image_tag 'https://static.retrip.jp/article/6334/images/633434d365a1-cdf7-4764-b710-d97fb211a48c_l.jpg',class: "contentSlider"
+        .contentSliderTitle
+          %h1【2016】今年の漢字は「金」！全国で買える
+      %p.contentSliderInfo
+        %span.contView
+          %span.icon-view
+          %span.name 
+
+      .contentSliderImg
+        = link_to image_tag 'https://static.retrip.jp/article/4036/images/40362f0e6c57-29c8-4d44-94eb-8ed6d8cd2f89_m.jpg', class: "contentSlider"
+        .contentSliderTitle
+          %h1【2016】今年の漢字は「金」！全国で買える"金色のお土産”5選
+      %p.contentSliderInfo
+        %span.contView
+          %span.icon-view
+          %span.name 
+
+      .contentSliderImg
+        = link_to image_tag 'https://static.retrip.jp/article/6334/images/63348f491bba-0a77-44c9-b7a9-8a4729b234ed_l.jpg', class: "contentSlider"
+        .contentSliderTitle
+          %h1【2016】今年の漢字は「金」！全国で買える"金色のお土産”5選
+      %p.contentSliderInfo
+        %span.contView
+          %span.icon-view
+          %span.name 
+  #mainWrap
+    = render partial: "sidebar"
+    .articleMain.mainlist
+      .pickup
+        %h2 注目まとめ
+      .GridList
+        %ul
+          %li
+            .exp
+              = link_to image_tag 'https://static.retrip.jp/article/74141/images/741413c3b882f-4b26-4988-890f-b9e77874f0c2_s.jpg', class: "articleImg"
+              .title
+                = link_to '無料ギャラリー巡り！銀座の無料ギャラリーオススメ8選',root_path, class: "title"
+              %p.expDesc "高級感のイメージのある銀座。実は無料で楽しむことができるギャラリーがたくさんあるのをご存知ですか？、、、"
+              .expList
+                %span.sub 2016/12/20
+                %span.conutView 5000
+                %span.name
+                  = link_to "rururu",""
+          %li
+            .exp
+              = link_to image_tag 'https://static.retrip.jp/article/74987/images/749871f36f799-1cee-4619-92a4-d3c0b27c36e4_l.jpg', class: "articleImg"
+              .title
+                = link_to '無料ギャラリー巡り！銀座の無料ギャラリーオススメ8選',root_path, class: "title"
+              %p.expDesc "高級感のイメージのある銀座。実は無料で楽しむことができるギャラリーがたくさんあるのをご存知ですか？、、、"
+              .expList
+                %span.sub
+                %span.conutView
+                %span.name
+      .pagenateWrap
+        .pagenation
+          %span.current-page
+            = link_to "1",""
+  = render partial: "footer"
