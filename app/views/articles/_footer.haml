@@ -1,0 +1,128 @@
+.footer-induction
+  .footerInduction
+    .section
+      %h2 アプリなら、RETRIPがもっと便利に簡単に！
+      %p 話題のカフェから絶景まで、最新の旅行・お出かけ情報をどこよりも早く毎日配信！
+      %p 最新のおでかけ情報が分かるイベントカレンダーや便利なお気に入り機能で、RETRIPがもっと快適に。
+      %ul
+        %li.apple
+        = link_to(image_tag('https://retrip.jp/static/img/common/btn_appstore.png', alt: 'apple_store', class: "apple"), 'http://app-adforce.jp/ad/p/r?_site=34306&_article=208110&_link=4912997&_image=4552342')
+        %li.google
+        = link_to(image_tag('https://retrip.jp/static/img/common/btn_googleplay.png',alt: 'google', class: "google"), 'http://app-adforce.jp/ad/p/r?_site=34307&_article=208111&_link=4913018&_image=4552356')
+
+.footer
+  .footerInner
+    .footerNavi
+      .blockLeft
+        %h2.index エリア一覧
+        %ul.areaindex
+          %li
+            %span
+            = link_to "日本", "",class: "area"
+          %li
+            %span.icon-location
+            = link_to "北米", "", class: "area"
+          %li
+            %span.icon-location
+            = link_to "中南米", "", class: "area"
+          %li
+            %span.icon-location
+            = link_to "アフリカ", "", class: "area"
+          %li
+            %span.icon-location
+            = link_to "中東", "", class: "area"
+          %li
+            %span.icon-location
+            = link_to "アジア", "", class: "area"
+          %li
+            %span.icon-location
+            = link_to "ヨーロッパ", "", class: "area"
+          %li
+            %span.icon-location
+            = link_to "オセアニア", "", class: "area"
+        %h2 人気のタグ
+        %ul.tagindex
+          %li
+            %span.icon-tag
+            = link_to "スイーツ","", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "カフェ","", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "ホテル", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "グルメ", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "デートスポット", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "絶景", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "国内", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "お土産", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "イベント", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "沖縄のホテル", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "東京のグルメ", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "大阪のグルメ", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "居酒屋", "", class: "tag"
+          %li
+            %span.icon-tag
+            = link_to "旅館","", class: "tag"
+    .blockRight
+      %h2 RETRIPについて
+      .cellWrap
+        %ul.cell
+          %li
+          = link_to "RETRIPについて", "", class: "about"
+          %li
+          = link_to "特集一覧", "", class: "about"
+          %li
+          = link_to "エリア一覧", "", class: "about"
+          %li
+          = link_to "タグ一覧", "", class: "about"
+        %ul.cell
+          %li
+          = link_to "キュレータープログラム", "", class: "about"
+          %li
+          = link_to "よくある質問", "", class: "about"
+          %li
+          = link_to "お問い合わせ", "", class: "about"
+          %li
+          = link_to "広告掲載について", "", class: "about"
+        %ul.cell
+          %li
+          = link_to "運営会社", "", class: "about"
+          %li
+          = link_to "公式ブログ", "", class: "about"
+          %li
+          = link_to "利用規約", "", class: "about"
+          %li
+          = link_to "プライバシーポリシー", "", class: "about"
+  .footerBottom
+    .footerBottomInner
+      .logo
+        = link_to image_tag "https://static.retrip.jp/static/img/common/logo.ee8b53951642.svg", alt: "RETRIP[リトリップ] - 旅行キュレーションメディア", width: "60px"
+      %p.copyright Copyright (c) 2016 trippiece All Rights Reserved.
+    %ul.socialIcon
+      %li
+        = link_to "","https://www.instagram.com/retrip_news/",class: "fa fa-instagram"
+      %li
+        = link_to "","http://twitter.com/retrip_news", class: "fa fa-twitter bard"
+      %li
+        = link_to "","http://facebook.com/retrip", class: "fa fa-facebook"
