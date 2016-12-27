@@ -1053,14 +1053,172 @@
         clear: both;
         position: relative;
       }
-      // span {
-      //   font-size: 11px;
-      //   color: #aaa;
-      //   font-weight: normal;
-      //   position: absolute;
-      //   right: 0;
-      //   bottom: 13px;
-      // }
+      .populer {
+        font-size: 11px;
+        color: #aaa;
+        font-weight: normal;
+        position: absolute;
+        right: 306px;
+        top: 1916px;
+      }
+      .expBottomGritList {
+        ul {
+          li {
+            .exp {
+              padding: 20px 0 20px 190px;
+              box-sizing: border-box;
+              position: relative;
+              border-bottom: #eee solid 1px;
+              min-height: 160px;
+              .articleImg {
+                width: 170px;
+                height: 120px;
+                position: absolute;
+                top: 20px;
+                left: 0;
+                background-color: #f7f7f7;
+              }
+              .title {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.3;
+                text-overflow: ellipsis;
+                -webkit-font-smoothing: antialiased;
+                max-height: 53px;
+                overflow: hidden;
+                margin-bottom: 7px;
+              }
+              .expDesc {
+                bottom: 42px;
+                font-size: 12px;
+                color: #AAA;
+                position: absolute;
+                left: 190px;
+                width: 510px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+              .expList {
+                font-family: 'Montserrat',sans-serif;
+                color: #AAA;
+                font-size: 12px;
+                line-height: 1;
+                position: absolute;
+                left: 190px;
+                bottom: 22px;
+                .sub {
+                  margin-right: 7px;
+                  -webkit-font-smoothing: antialiased;
+                }
+                .countView {
+                  margin-right: 7px;
+                  -webkit-font-smoothing: antialiased;
+                }
+                .fa-eye {
+                  color: #b5b5b5;
+                  font-size: 10px;
+                  padding-right: 4px;
+                  position: relative;
+                }
+                .name {
+                  margin-right: 7px;
+                  -webkit-font-smoothing: antialiased;
+                }
+              }
+            }
+          }
+        }
+      }
+      .recomend {
+        font-size: 11px;
+        color: #aaa;
+        font-weight: normal;
+        position: absolute;
+        right: 306px;
+        top: 2167px;
+      }
+      .userProfile {
+        padding-top: 10px;
+        .writer {
+          font-size: 11px;
+          color: #aaa;
+          font-weight: normal;
+          position: absolute;
+          right: 306px;
+          top: 2438px;
+        }
+        .userProfileInner {
+          display: table;
+          width: 100%;
+          border-bottom: #eee solid 1px;
+          .section {
+            padding: 25px 0 25px 80px;
+            height: 115px;
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            .userName {
+              font-family: 'Montserrat',sans-serif;
+              font-size: 15px;
+              font-weight: normal;
+              padding: 0 0 2px 0;
+            }
+            .userIcon {
+              background-image: url(https://static.retrip.jp/static/img/pc/common/icon_user_default.7229d92bf607.jpg);
+              width: 60px;
+              height: 60px;
+              border-radius: 30px;
+              position: absolute;
+              top: 25px;
+              left: 0;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+            .userInfo {
+              font-size: 12px;
+              color: #AAA;
+            }
+          }
+        }
+      }
+      .report {
+        padding-top: 12px;
+        padding-bottom: 55px;
+        text-align: right;
+        font-size: 12px;
+      }
+    }
+  }
+}
+#mainFooter {
+  clear: both;
+  border-top: #eee solid 1px;
+  .content {
+    width: 1030px;
+    margin: 0 auto;
+    padding: 9px 25px;
+    .breadList {
+      font-size: 12px;
+      color: #666;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      .itemtype {
+        line-height: 1.6;
+        font-size: 12px;
+        padding: 0 12px;
+        position: relative;
+        top: -2px;
+        display: inline-block;
+        -webkit-font-smoothi
+        .root {
+          color: #666;
+        }
+      }
     }
   }
 }
