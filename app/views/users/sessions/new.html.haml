@@ -1,0 +1,44 @@
+#page
+  = render partial: "articles/header"
+  #mainHeader
+    .content
+      %ul.breadList
+        %li.itemscope.itemtype
+          = link_to "トップページ", root_path, class: "root"
+        %li.itemscope.itemtype
+          = link_to "ユーザーログイン","", class: "root"
+  #main
+    .contentTopTitle
+      %h1 ユーザーログイン
+    .content.login
+      %aside
+        = link_to "新規登録はこちら", new_user_registration_path, class: "sign_up"
+      %section.loginWrap.blockLogin#form
+        %h2 メールアドレスでログイン
+        = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          %ul.mailLogin
+            %li
+            = f.email_field :email, autofocus: true, placeholder:"ユーザーID/メールアドレス",class: "form"
+            %li
+            = f.password_field :password, autocomplete: "off", placeholder: "パスワード", class: "form"
+            %li
+            = f.submit "ログイン", class: "submit"
+        .loginBot
+          = link_to "パスワードを忘れた方はこちら", "", class: "bot"
+      %section.loginWrap.blockRight
+        %h2 SNSアカウントでログイン
+        %ul.snsLogin
+          %li
+            = link_to "Facebookでログイン","", class: "facebook"
+            %span.fa.fa-facebook
+          %li
+            = link_to "Twitterでログイン","", class: "twitter"
+            %span.fa.fa-twitter.bard
+          %p.atention Facebook•Twitterに許可なく投稿されることはありません
+      %p.agreement
+        %nobr 登録すると、
+        = link_to "利用規約","",class: "agreement"
+        および
+        = link_to "プライバシーポリシー","", class: "agreement"
+        に同意したことになります
+  = render partial: "articles/footer"

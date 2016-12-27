@@ -1,0 +1,161 @@
+= render partial: "articles/header"
+#mainHeader
+  .content
+    %ul.breadList
+      %li.itemscope.itemtype
+        = link_to "トップページ", root_path, class: "root"
+      %li.itemscope.itemtype
+        = link_to "エリア一覧","", class: "root"
+      %li.itemscope.itemtype
+        = link_to "アジア","", class: "root"
+      %li.itemscope.itemtype
+        = link_to "日本","", class: "root"
+      %li.itemscope.itemtype
+        = link_to "関東地方","", class: "root"
+      %li.itemscope.itemtype
+        = link_to "東京","", class: "root"
+
+#mainWrap
+  .contentTopTitle
+    %h1
+    = link_to "飲んだ後はやっぱりこれ！絶品「お茶漬け」が食べられる東京都内の７店","https://retrip.jp/articles/75150/", class: "toptitle"
+  .contentTopInfo
+    %span.userIcon
+    %span.name
+    = link_to "misokatu", "https://retrip.jp/users/ao___xx/articles/",class: "username"
+    %span.date | 更新日：2016年12月25日
+  .contentStatusArea
+    .contentStatusAreaFav
+      = link_to "",""
+      = link_to "5159", "",class: "sum"
+      .sumText お気に入り
+    .contentStatusAreaConut
+      = link_to "100","", class: "sum"
+      .sumText View
+    = link_to "お気に入り","",class: "favBotton"
+    %span.fa.fa-heart-o
+
+  = render partial: "articles/sidebar"
+  .articleMain
+    .contentWrap
+      .content
+        %ul.shareTop
+          %li.facebook
+            %span.fa.fa-facebook シェア
+          %li.twitter
+            %span.fa.fa-twitter.bard ツイート
+          %li.google-plus
+            %span.fa.fa-google-plus シェア
+          %li.hatena
+            %span.hatebu B! はてぶ
+          %li.pocket
+            %span.fa.fa-get-pocket あとで
+      .contentTop
+        = image_tag "https://static.retrip.jp/article/75150/images/7515052ca49f7-0eab-4fd1-9832-07b183622d41_m.jpg", class: "mainBg"
+      %p.contentTopDesc 忘年会シーズンのこの時期、ついつい飲みすぎちゃうこともありますよね。思いっきりお酒を楽しんだ後や翌日の朝には、お茶漬けが食べたくなりませんか？今回は、東京都内の美味しいお茶漬けが食べられるお店を厳選して7店紹介します。
+      %article
+        .expItem
+          %h2 モジャインザハウス
+        .expImg
+          .user
+            = image_tag("https://scontent.cdninstagram.com/t51.2885-19/s150x150/13549387_588092511351027_1757295247_a.jpg", class: "userImg")
+            = link_to "yuna","", class: "userName"
+            %span
+          .imageArea
+            = image_tag("https://static.retrip.jp/static/img/common/no_image.b9c11452e9e3.png", class: "image")
+            %span.source
+              = link_to image_tag('https://static.retrip.jp/image-reference-logo/24/images/pc/28033edc-4914-44fe-ac35-22262d7a5a65_l.jpg', { width:"50px", height:"14px", alt: "instagram", id: "img"}), root_path
+            .imageDetail
+        .expText
+          まず最初に紹介する東京都内の美味しいお茶漬けのお店は、六本木にある創作お茶漬け専門店『だよね。』です。テレビや雑誌で話題沸騰中のこちらのお店では、様々な種類のお茶漬けを楽しむことができます。
+      .pagenateWrap
+        .pagenation
+          %span.current_page 1
+      .socialBottom
+        .share
+          = link_to "Facebookでシェア","", class: "share-facebook"
+          %span.fa.fa-facebook
+          = link_to "Twitterでシェア","",class: "share-twitter"
+          %span.fa.fa-twitter.bard
+        .fav
+          .iconWrap
+            %span.fa.fa-heart-o
+      .tagBottom
+        %h2 このまとめ記事に関連するタグ
+        %ul.ng-scope
+          %li
+            = link_to "お茶漬け","", class: "hashtag"
+            %span.fa.fa-hashtag
+          %li
+            = link_to "東京のグルメ","", class: "hashtag"
+            %span.fa.fa-hashtag
+          %li
+            = link_to "東京都内","", class: "hashtag"
+            %span.fa.fa-hashtag
+          %li
+            = link_to "〆の一品","", class: "hashtag"
+            %span.fa.fa-hashtag
+          %li
+            = link_to "和食", "", class: "hashtag"
+            %span.fa.fa-hashtag.heart
+        .tagReadMore
+          %span もっと見る
+      %h2 関連する記事
+      %span この記事に関連する人気まとめ記事
+      .expBottomGritList
+        %ul
+          %li
+            .exp
+              = link_to image_tag 'https://static.retrip.jp/article/74141/images/741413c3b882f-4b26-4988-890f-b9e77874f0c2_s.jpg', class: "articleImg"
+              .title
+                = link_to '無料ギャラリー巡り！銀座の無料ギャラリーオススメ8選',root_path, class: "title"
+              %p.expDesc "高級感のイメージのある銀座。実は無料で楽しむことができるギャラリーがたくさんあるのをご存知ですか？、、、"
+              .expList
+                %span.sub 2016/12/20
+                %span.countView 5000
+                %span.fa.fa-eye
+                %span.name
+                  = link_to "rururu",""
+      %h2 新着のまとめ記事
+      %span 編集部おすすめ！新着人気まとめ記事
+      .expBottomGritList
+        %ul
+          %li
+            .exp
+              = link_to image_tag 'https://static.retrip.jp/article/74141/images/741413c3b882f-4b26-4988-890f-b9e77874f0c2_s.jpg', class: "articleImg"
+              .title
+                = link_to '無料ギャラリー巡り！銀座の無料ギャラリーオススメ8選',root_path, class: "title"
+              %p.expDesc "高級感のイメージのある銀座。実は無料で楽しむことができるギャラリーがたくさんあるのをご存知ですか？、、、"
+              .expList
+                %span.sub 2016/12/20
+                %span.conutView 5000
+                %span.fa.fa-eye
+                %span.name
+                  = link_to "rururu",""
+      .userProfile
+        %h2 キュレーター紹介
+        %span このまとめを書いた人
+        .userProfileInner
+          .section
+            = link_to "misokatu","", class: "userName"
+            %span.userIcon
+            %span.userInfo
+      .report
+        = link_to "このまとめ記事に関して報告する"
+    #mainFooter
+      .content
+        %ul.breadList
+          %li.itemscope.itemtype
+            = link_to "トップページ", root_path, class: "root"
+          %li.itemscope.itemtype
+            = link_to "エリア一覧","", class: "root"
+          %li.itemscope.itemtype
+            = link_to "アジア","", class: "root"
+          %li.itemscope.itemtype
+            = link_to "日本","", class: "root"
+          %li.itemscope.itemtype
+            = link_to "関東地方","", class: "root"
+          %li.itemscope.itemtype
+            = link_to "東京","", class: "root"
+
+= render partial: "articles/footer"

@@ -7,6 +7,48 @@
         %input.headerSearchInput{autocomplete: "off", name: "q", placeholder: "気になるワードを入力", type: "text" }/
         %input.dummy
         %input.headerSearchBtn{ "ng-click" => "submit()", type: "button",value: "" }/
+        %ul.searchList
+          %li
+            = link_to "絶景", "", class: "search-box"
+          %li
+            = link_to "東京のグルメ", "", class: "search-box"
+          %li
+            = link_to "東京のホテル", "", class: "search-box"
+          %li
+            = link_to "グルメ", "",class: "search-box"
+          %li
+            = link_to "大阪のグルメ", "", class: "search-box"
+          %li
+            = link_to "お土産", "", class: "search-box"
+          %li
+            = link_to "デートスポット", "", class: "search-box"
+          %li
+            = link_to "カフェ", "",class: "search-box"
+          %li
+            = link_to "イベント", "", class: "search-box"
+          %li
+            = link_to "ホテル", "", class: "search-box"
+          %li
+            = link_to "スイーツ", "", class: "search-box"
+          %li
+            = link_to "温泉", "",class: "search-box"
+          %li
+            = link_to "国内", "", class: "search-box"
+          %li
+            = link_to "紅葉", "", class: "search-box"
+          %li
+            = link_to "ディズニー", "", class: "search-box"
+          %li
+            = link_to "居酒屋", "",class: "search-box"
+          %li
+            = link_to "旅館", "", class: "search-box"
+          %li
+            = link_to "東京の観光スポット", "", class: "search-box"
+          %li
+            = link_to "世界の絶景", "", class: "search-box"
+          %li
+            = link_to "沖縄のホテル", "",class: "search-box"
+        
       %ul.headerSearchDialog.ng-hide
     .headerMenu
       %span.userName
